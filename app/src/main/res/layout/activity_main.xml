@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000003"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_weight="1"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp">
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Connect"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:progressTint="@android:color/white"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>

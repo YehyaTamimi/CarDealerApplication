@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".CarDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Car Details"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/carName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Car Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/carInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Car Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/carPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Car Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/carDoors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Car Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/carState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Car Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/carYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Car Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Reserve" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_button"
+        android:text="BACK" />
+
+</LinearLayout>

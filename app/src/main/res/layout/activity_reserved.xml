@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp"
+    tools:context=".ReservedActivity">
+
+    <TextView
+        android:id="@+id/textViewReservationsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservations"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewReservationsTitle">
+
+        <TableLayout
+            android:id="@+id/tableReservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <!-- Table headers -->
+            <TableRow
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="User Name"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="User ID"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Car Name"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Car ID"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Date of Reservation"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Dynamic rows will be added here in your Java code -->
+
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

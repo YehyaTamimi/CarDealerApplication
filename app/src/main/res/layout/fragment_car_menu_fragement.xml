@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarMenuFragement">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <EditText
+            android:id="@+id/editTextFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:hint="Filter by Name, Year, or Price"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F6F6F6" />
+
+        <Button
+            android:id="@+id/buttonFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Filter"
+
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CarMenuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"/>
+</FrameLayout>

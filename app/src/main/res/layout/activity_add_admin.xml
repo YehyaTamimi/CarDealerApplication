@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".AddAdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-127dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- EditText fields for user information -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="First Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Last Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Gender"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editTextCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Country"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="City"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+            <!-- Placeholder image -->
+
+            <!-- Button to Select Profile Picture -->
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:paddingHorizontal="30dp"
+                android:text="Sign Up" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

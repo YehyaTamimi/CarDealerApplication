@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginVertical="60dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="60dp"
+            android:text="WELCOME"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_textedit"
+            android:hint="Email"
+            android:inputType="textEmailAddress" /> <!-- Set background color to white -->/> <!-- Set text color to black -->
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_textedit"
+
+            android:hint="Password"
+            android:inputType="textPassword" /> <!-- Set background color to white -->/> <!-- Set text color to black -->
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Sign In"
+            android:background="@drawable/rounded_button"/>
+
+        <CheckBox
+            android:id="@+id/checkboxRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Don't have an account? Sign up"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

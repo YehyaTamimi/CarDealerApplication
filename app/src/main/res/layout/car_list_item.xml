@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- car_list_item.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Car Name and Year -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/textCarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Model Name"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Car Year -->
+        <TextView
+            android:id="@+id/textCarYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year: 2022"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Add to Favorites Button (Heart-shaped) -->
+    <ImageView
+        android:id="@+id/btnAddToFavorites"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+
+        android:contentDescription="Add to Favorites"
+        android:src="@drawable/favorite_border" />
+
+    <!-- Reserve Button -->
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Reserve" />
+
+
+</LinearLayout>
+

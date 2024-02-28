@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+     <ScrollView
+         android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#000000"
+             android:orientation="vertical"
+             android:padding="16dp">
+
+             <EditText
+                 android:id="@+id/editTextFirstName"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/rounded_textedit"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"
+                 android:hint="First Name"
+                 android:inputType="textPersonName"/>
+
+             <EditText
+                 android:id="@+id/editTextLastName"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/rounded_textedit"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"
+                 android:hint="Last Name"
+                 android:inputType="textPersonName" />
+
+             <EditText
+                 android:id="@+id/editTextEmail"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/rounded_textedit"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"
+                 android:hint="Email"
+                 android:inputType="textPersonName" />
+
+             <Spinner
+                 android:id="@+id/spinnerGender"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/rounded_textedit"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"/>
+
+             <EditText
+                 android:id="@+id/editTextPassword"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"
+                 android:hint="Password"
+                 android:inputType="textPassword"
+                 android:background="@drawable/rounded_textedit"/>
+
+             <EditText
+                 android:id="@+id/editTextConfirmPassword"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"
+                 android:hint="Confirm Password"
+                 android:inputType="textPassword"
+                 android:background="@drawable/rounded_textedit"/>
+
+             <Spinner
+                 android:id="@+id/spinnerCountry"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/rounded_textedit"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"/>
+
+             <Spinner
+                 android:id="@+id/spinnerCity"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/rounded_textedit"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"/>
+
+             <EditText
+                 android:id="@+id/editTextCountryCode"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"
+                 android:editable="false"
+                 android:enabled="false"
+                 android:textColor="@android:color/black"
+                 android:textSize="18sp"
+                 android:background="@drawable/rounded_textedit"/>
+
+             <EditText
+                 android:id="@+id/editTextPhoneNumber"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="7dp"
+                 android:layout_marginBottom="20dp"
+                 android:hint="Phone Number"
+                 android:inputType="phone"
+                 android:background="@drawable/rounded_textedit"/>
+
+             <Button
+                 android:id="@+id/buttonSignUp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@drawable/rounded_button"
+                 android:padding="7dp"
+                 android:layout_marginBottom="5dp"
+                 android:text="Sign Up" />
+
+
+
+         </LinearLayout>
+        </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
